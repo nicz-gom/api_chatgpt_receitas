@@ -1,11 +1,11 @@
-import chatReceitas from "./pages/receitasChat"
+import ChatReceitas from "./pages/receitasChat.jsx"
 
 function App() {
 
   return (
     <div className="min-h-screen bg-gray-100">
 
-      <chatReceitas />
+      <ChatReceitas />
 
     </div>
   )
