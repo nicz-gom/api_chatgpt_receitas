@@ -14,7 +14,7 @@ export const api = async (pergunta) => {
 
     } catch (err) {
         console.error("Erro ao buscar resposta no servidor", err);
-        throw error;
+        throw err;
     }
 
 }
