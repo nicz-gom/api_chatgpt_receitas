@@ -1,10 +1,13 @@
-const ListaMensagens = ({ mensagem }) => {
+import MensagemConstrutor from "./MensagemConstrutor"
+import Mensagem from "./MensagemConstrutor"
+
+const ListaMensagens = ({ mensagens }) => {
 
     return (
-        <div>
+        <div className="flex-1 overflow-y-auto p-4 space-y-4">
 
-            {mensagem.map(mensagens => (
-                <Mensagem key={mensagens.id}>{mensagens.text}</Mensagem>
+            {mensagens.map(mensagem => (
+                <MensagemConstrutor key={mensagem.id} mensagem={mensagem} />
             ))}
 
         </div>
